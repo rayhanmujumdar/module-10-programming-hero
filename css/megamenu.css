@@ -1,0 +1,66 @@
+nav > ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    color: red;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.dropdown,.dropdown-5{
+    display: none;
+    position: absolute;
+    background-color: wheat;
+}
+.dropdown:hover,.dropdown-5:hover,.mini-menu:hover,.mini-menu-2:hover{
+    display: block;   
+}
+.dropdown,.dropdown-5,.mini-menu,.mini-menu-2{
+    padding: 10px;
+    border-radius: 10px;
+
+}
+nav>ul>li:hover>.dropdown.mega-menu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 2em;
+}
+.mega-menu h3{
+    font-size: 20px;
+    margin-bottom: 0;
+    color: gray;
+}
+.mini-menu{
+    position: absolute;
+    left: 100px;
+    background-color: gray;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    display: none;
+    transition: 10s;
+}
+.mini-menu-2{
+    position: absolute;
+    left: 100px;
+    background-color: gray;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    display: none;
+}
+.dropdown-5>ul>li:hover>.mini-menu{
+    display: block;
+}
+.mini-menu>ul>li:hover>.mini-menu-2{
+    display: block;
+}

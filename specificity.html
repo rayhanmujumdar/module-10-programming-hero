@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity</title>
+    <style>
+        #third{
+            color: brown;
+        }
+        .common{
+            color: blue !important;
+        }
+        h1{
+            background-color: salmon;
+            color: darkcyan;
+        }
+        h1{
+            color: red;
+        }
+        h1{
+            color: saddlebrown;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="common">my heading number-1</h1>
+    <h1 class="common">my heading number-2</h1>
+    <h1 class="common" id="third">my heading number-4</h1>
+    <h1 class="common" id="third">my heading number-3</h1>
+</body>
+</html>
